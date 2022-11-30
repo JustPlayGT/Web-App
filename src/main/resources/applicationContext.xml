@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:component-scan base-package="com.gt.test1"/>
+
+    <bean id="Shape1"
+          class="com.gt.test1.Cube">
+        <constructor-arg value="10"/>
+        <constructor-arg value="Kevin"/>
+    </bean>
+
+    <bean id="Shape2"
+          class="com.gt.test1.Sphere">
+        <constructor-arg value="1"/>
+    </bean>
+
+    <bean id="Shape3"
+          class="com.gt.test1.Cylinder">
+        <constructor-arg value="1"/>
+        <constructor-arg value="1"/>
+
+    </bean>
+
+
+
+</beans>
